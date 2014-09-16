@@ -56,7 +56,7 @@ public class LogParser extends BaseSinfonierBolt {
                 String[] campo = dataarray[i].trim().split(":");
 
                 if (campo.length == 2){
-                    System.out.println("Se añaden los campos: "+urlsearch[i]+campo[0]+campo[1]);
+                    System.out.println("Se añaden los campos: "+dataarray[i]+campo[0]+campo[1]);
                     this.addField((String) campo[0].trim(),(String) campo[1].trim());
                 }
             }
